@@ -9,3 +9,4 @@ export { formatToCPFOrCNPJ } from "./src/document/mask.ts";
 export { formatToCEP } from "./src/cep/mask.ts";
 export { formatToPhoneBR } from "./src/phone/mask.ts";
 export { formatToBRL } from "./src/currency/format.ts";
+export type { DocKind } from "./src/core/types.ts";

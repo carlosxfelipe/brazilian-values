@@ -54,22 +54,23 @@ console.log("Moeda inválida:", formatToBRL("abc")); // abc
 
 ## Funções disponíveis
 
-- `formatToBRL(valor: number | string): string` — Formata número para Real
-  brasileiro.
-- `formatToCEP(cep: string): string` — Formata CEP para padrão `XXXXX-XXX`.
+- `isCPF(cpf: string): boolean` — Valida CPF.
+- `formatToCPF(cpf: string): string` — Formata CPF para padrão `XXX.XXX.XXX-XX`.
+- `isCNPJ(cnpj: string): boolean` — Valida CNPJ.
 - `formatToCNPJ(cnpj: string): string` — Formata CNPJ para padrão
   `XX.XXX.XXX/XXXX-XX`.
-- `formatToNewAlphaCNPJ(cnpjx: string): string` — Formata **novo CNPJ
-  alfa-numérico (CNPJX)**.
-- `formatToCPF(cpf: string): string` — Formata CPF para padrão `XXX.XXX.XXX-XX`.
-- `isCPF(cpf: string): boolean` — Valida CPF.
-- `isCNPJ(cnpj: string): boolean` — Valida CNPJ.
-- `isNewAlphaCNPJ(cnpjx: string): boolean` — Valida **novo CNPJ alfa-numérico
-  (CNPJX)**.
+- `isNewAlphaCNPJ(cnpjx: string): boolean` — Valida novo CNPJ alfa-numérico.
+- `formatToNewAlphaCNPJ(cnpjx: string): string` — Formata novo CNPJ
+  alfa-numérico.
 - `isCPFOrCNPJ(valor: string): boolean` — Valida se é CPF, CNPJ ou CNPJX.
+- `whichDoc(valor: string): "cpf" | "cnpj" | "cnpjx" | null` — Retorna o tipo de
+  documento detectado.
 - `formatToCPFOrCNPJ(valor: string): string` — Formata automaticamente para CPF,
   CNPJ ou CNPJX.
+- `formatToCEP(cep: string): string` — Formata CEP para padrão `XXXXX-XXX`.
 - `formatToPhoneBR(telefone: string): string` — Formata telefone fixo ou celular
+  brasileiro.
+- `formatToBRL(valor: number | string): string` — Formata número para Real
   brasileiro.
 
 ## Licença
