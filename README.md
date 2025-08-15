@@ -1,5 +1,11 @@
 # brazilian-values
 
+[![JSR version](https://img.shields.io/jsr/v/@carlosxfelipe/brazilian-values)](https://jsr.io/@carlosxfelipe/brazilian-values)
+
+<a href="https://deno.com">
+  <img align="right" src="https://deno.land/logo.svg" height="100px" alt="Deno logo">
+</a>
+
 Biblioteca para validar e formatar valores brasileiros (CPF, CNPJ, novo CNPJ
 alfa-numérico, CEP, telefone, moeda) usando **Deno** e **TypeScript**.
 
