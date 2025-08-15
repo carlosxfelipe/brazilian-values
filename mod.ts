@@ -6,3 +6,6 @@ export { isCNPX } from "./src/cnpjx/validate.ts";
 export { formatToCNPJX } from "./src/cnpjx/mask.ts";
 export { isCPFOrCNPJ, whichDoc } from "./src/document/validate.ts";
 export { formatToCPFOrCNPJ } from "./src/document/mask.ts";
+export { formatToCEP } from "./src/cep/mask.ts";
+export { formatToPhoneBR } from "./src/phone/mask.ts";
+export { formatToBRL } from "./src/currency/format.ts";

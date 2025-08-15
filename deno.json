@@ -1,5 +1,5 @@
 {
-  "name": "brazilian-values",
+  "name": "@carlosxfelipe/brazilian-values",
   "version": "0.1.0",
   "exports": {
     ".": "./mod.ts"
