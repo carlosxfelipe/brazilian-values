@@ -1,0 +1,15 @@
+{
+  "name": "brazilian-values",
+  "version": "0.1.0",
+  "exports": {
+    ".": "./mod.ts"
+  },
+  "tasks": {
+    "fmt": "deno fmt",
+    "lint": "deno lint",
+    "test": "deno test -A"
+  },
+  "compilerOptions": {
+    "strict": true
+  }
+}
