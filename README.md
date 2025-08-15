@@ -11,40 +11,6 @@ alfa-numérico, CEP, telefone, moeda) usando **Deno** e **TypeScript**.
 import { formatToBRL, isCPFOrCNPJ } from "jsr:@carlosxfelipe/brazilian-values";
 ```
 
-### Node (npm, pnpm, yarn)
-
-O pacote é distribuído pelo [JSR](https://jsr.io), que gera um nome compatível
-para o npm.
-
-```bash
-# npm
-npx jsr add @carlosxfelipe/brazilian-values
-
-# pnpm
-pnpm dlx jsr add @carlosxfelipe/brazilian-values
-
-# yarn
-yarn dlx jsr add @carlosxfelipe/brazilian-values
-```
-
-Importe no código:
-
-```ts
-import { formatToBRL, isCPFOrCNPJ } from "@jsr/carlosxfelipe__brazilian-values";
-```
-
-### Bun
-
-```bash
-bunx jsr add @carlosxfelipe/brazilian-values
-```
-
-Importe no código:
-
-```ts
-import { formatToBRL, isCPFOrCNPJ } from "@jsr/carlosxfelipe__brazilian-values";
-```
-
 ## Exemplos
 
 ```ts
