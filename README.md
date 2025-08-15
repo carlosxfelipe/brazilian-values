@@ -28,7 +28,7 @@ console.log("CPF sem máscara:", isCPFOrCNPJ("12345678909"));
 console.log("CNPJ com máscara:", isCPFOrCNPJ("11.222.333/0001-81"));
 console.log("CNPJ sem máscara:", isCPFOrCNPJ("11222333000181"));
 
-// Novo CNPJ (CNPJX) - CNPJ alfa-numérico
+// Novo CNPJ alfa-numérico
 console.log("Novo CNPJ com máscara:", isCPFOrCNPJ("1A.23B.45C/678D-01"));
 console.log("Novo CNPJ sem máscara:", isCPFOrCNPJ("1A23B45C678D01"));
 
@@ -59,12 +59,12 @@ console.log("Moeda inválida:", formatToBRL("abc")); // abc
 - `formatToCEP(cep: string): string` — Formata CEP para padrão `XXXXX-XXX`.
 - `formatToCNPJ(cnpj: string): string` — Formata CNPJ para padrão
   `XX.XXX.XXX/XXXX-XX`.
-- `formatToCNPJX(cnpjx: string): string` — Formata **novo CNPJ alfa-numérico
-  (CNPJX)**.
+- `formatToNewAlphaCNPJ(cnpjx: string): string` — Formata **novo CNPJ
+  alfa-numérico (CNPJX)**.
 - `formatToCPF(cpf: string): string` — Formata CPF para padrão `XXX.XXX.XXX-XX`.
 - `isCPF(cpf: string): boolean` — Valida CPF.
 - `isCNPJ(cnpj: string): boolean` — Valida CNPJ.
-- `isCNPJX(cnpjx: string): boolean` — Valida **novo CNPJ alfa-numérico
+- `isNewAlphaCNPJ(cnpjx: string): boolean` — Valida **novo CNPJ alfa-numérico
   (CNPJX)**.
 - `isCPFOrCNPJ(valor: string): boolean` — Valida se é CPF, CNPJ ou CNPJX.
 - `formatToCPFOrCNPJ(valor: string): string` — Formata automaticamente para CPF,
