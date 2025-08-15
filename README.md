@@ -1,12 +1,48 @@
 # brazilian-values
 
 Biblioteca para validar e formatar valores brasileiros (CPF, CNPJ, novo CNPJ
-alfa-numérico - CNPJX, CEP, telefone, moeda) usando **Deno** e **TypeScript**.
+alfa-numérico, CEP, telefone, moeda) usando **Deno** e **TypeScript**.
 
 ## Instalação
 
+### Deno
+
 ```ts
 import { formatToBRL, isCPFOrCNPJ } from "jsr:@carlosxfelipe/brazilian-values";
+```
+
+### Node (npm, pnpm, yarn)
+
+O pacote é distribuído pelo [JSR](https://jsr.io), que gera um nome compatível
+para o npm.
+
+```bash
+# npm
+npx jsr add @carlosxfelipe/brazilian-values
+
+# pnpm
+pnpm dlx jsr add @carlosxfelipe/brazilian-values
+
+# yarn
+yarn dlx jsr add @carlosxfelipe/brazilian-values
+```
+
+Importe no código:
+
+```ts
+import { formatToBRL, isCPFOrCNPJ } from "@jsr/carlosxfelipe__brazilian-values";
+```
+
+### Bun
+
+```bash
+bunx jsr add @carlosxfelipe/brazilian-values
+```
+
+Importe no código:
+
+```ts
+import { formatToBRL, isCPFOrCNPJ } from "@jsr/carlosxfelipe__brazilian-values";
 ```
 
 ## Exemplos
@@ -62,11 +98,12 @@ console.log("Moeda inválida:", formatToBRL("abc")); // abc
 - `isNewAlphaCNPJ(cnpjx: string): boolean` — Valida novo CNPJ alfa-numérico.
 - `formatToNewAlphaCNPJ(cnpjx: string): string` — Formata novo CNPJ
   alfa-numérico.
-- `isCPFOrCNPJ(valor: string): boolean` — Valida se é CPF, CNPJ ou CNPJX.
+- `isCPFOrCNPJ(valor: string): boolean` — Valida se é CPF, CNPJ ou novo CNPJ
+  alfa-numérico.
 - `whichDoc(valor: string): "cpf" | "cnpj" | "cnpjx" | null` — Retorna o tipo de
   documento detectado.
 - `formatToCPFOrCNPJ(valor: string): string` — Formata automaticamente para CPF,
-  CNPJ ou CNPJX.
+  CNPJ ou novo CNPJ alfa-numérico.
 - `formatToCEP(cep: string): string` — Formata CEP para padrão `XXXXX-XXX`.
 - `formatToPhoneBR(telefone: string): string` — Formata telefone fixo ou celular
   brasileiro.
