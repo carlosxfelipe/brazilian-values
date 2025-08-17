@@ -20,7 +20,7 @@ import {
   formatToCPFOrCNPJ,
   formatToPhoneBR,
   isCPFOrCNPJ,
-} from "jsr:@carlosxfelipe/brazilian-values@0.2.1";
+} from "jsr:@carlosxfelipe/brazilian-values@0.2.2";
 ```
 
 ## Exemplos
@@ -32,7 +32,7 @@ import {
   formatToCPFOrCNPJ,
   formatToPhoneBR,
   isCPFOrCNPJ,
-} from "jsr:@carlosxfelipe/brazilian-values@0.2.1";
+} from "jsr:@carlosxfelipe/brazilian-values@0.2.2";
 
 // CPF
 console.log("CPF com máscara:", isCPFOrCNPJ("123.456.789-09")); // true
@@ -73,13 +73,13 @@ console.log("Moeda inválida:", formatToBRL("abc")); // Moeda inválida: abc
 - `isCNPJ(cnpj: string): boolean` — Valida CNPJ.
 - `formatToCNPJ(cnpj: string): string` — Formata CNPJ para padrão
   `XX.XXX.XXX/XXXX-XX`.
-- `isNewAlphaCNPJ(cnpjx: string): boolean` — Valida novo CNPJ alfa-numérico.
-- `formatToNewAlphaCNPJ(cnpjx: string): string` — Formata novo CNPJ
+- `isNewAlphaCNPJ(alphacnpj: string): boolean` — Valida novo CNPJ alfa-numérico.
+- `formatToNewAlphaCNPJ(alphacnpj: string): string` — Formata novo CNPJ
   alfa-numérico.
 - `isCPFOrCNPJ(valor: string): boolean` — Valida se é CPF, CNPJ ou novo CNPJ
   alfa-numérico.
-- `whichDoc(valor: string): "cpf" | "cnpj" | "cnpjx" | null` — Retorna o tipo de
-  documento detectado.
+- `whichDoc(valor: string): "cpf" | "cnpj" | "alphacnpj" | null` — Retorna o
+  tipo de documento detectado.
 - `formatToCPFOrCNPJ(valor: string): string` — Formata automaticamente para CPF,
   CNPJ ou novo CNPJ alfa-numérico.
 - `formatToCEP(cep: string): string` — Formata CEP para padrão `XXXXX-XXX`.
