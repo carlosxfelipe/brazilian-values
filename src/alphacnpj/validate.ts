@@ -55,7 +55,7 @@ const calcCheckDigit = (values: number[], weights: number[]): number => {
  * isAlphaCNPJ("12ABC34501DE00")     // false
  */
 export const isAlphaCNPJ = (alphacnpj: string): boolean => {
-  if (!/^[0-9A-Z.\/-]+$/.test(alphacnpj)) return false;
+  if (!/^[0-9A-Za-z.\/-]+$/.test(alphacnpj)) return false;
 
   const cleaned = onlyAlphaNumUpper(stripCommonMask(alphacnpj));
   if (cleaned.length !== 14) return false;
