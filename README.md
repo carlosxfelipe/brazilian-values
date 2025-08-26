@@ -32,7 +32,7 @@ import {
   formatToCPFOrCNPJ,
   formatToPhoneBR,
   isCPFOrCNPJ,
-} from "jsr:@carlosxfelipe/brazilian-values@0.2.2";
+} from "jsr:@carlosxfelipe/brazilian-values@0.3.1";
 
 // CPF
 console.log("CPF com máscara:", isCPFOrCNPJ("123.456.789-09")); // true
@@ -87,6 +87,9 @@ console.log("Moeda inválida:", formatToBRL("abc")); // Moeda inválida: abc
   brasileiro.
 - `formatToBRL(valor: number | string): string` — Formata número para Real
   brasileiro.
+
+> **Compatibilidade:** os nomes `isNewAlphaCNPJ` e `formatToNewAlphaCNPJ`
+> continuam disponíveis como _deprecated_ e serão removidos em versões futuras.
 
 ## Licença
 
