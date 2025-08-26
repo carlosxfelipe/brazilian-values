@@ -3,7 +3,6 @@ import { formatToBRL } from "./format.ts";
 
 Deno.test("formatToBRL: número", () => {
   const s = formatToBRL(1234.56);
-  // tolerante a NBSP e variações de localidade
   assert(s.includes("R$"));
   assert(s.includes("1.234,56"));
 });
