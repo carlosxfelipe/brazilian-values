@@ -73,8 +73,8 @@ console.log("Moeda inválida:", formatToBRL("abc")); // Moeda inválida: abc
 - `isCNPJ(cnpj: string): boolean` — Valida CNPJ.
 - `formatToCNPJ(cnpj: string): string` — Formata CNPJ para padrão
   `XX.XXX.XXX/XXXX-XX`.
-- `isNewAlphaCNPJ(alphacnpj: string): boolean` — Valida novo CNPJ alfa-numérico.
-- `formatToNewAlphaCNPJ(alphacnpj: string): string` — Formata novo CNPJ
+- `isAlphaCNPJ(alphacnpj: string): boolean` — Valida novo CNPJ alfa-numérico.
+- `formatToAlphaCNPJ(alphacnpj: string): string` — Formata novo CNPJ
   alfa-numérico.
 - `isCPFOrCNPJ(valor: string): boolean` — Valida se é CPF, CNPJ ou novo CNPJ
   alfa-numérico.
