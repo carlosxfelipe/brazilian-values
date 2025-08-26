@@ -20,7 +20,7 @@ import {
   formatToCPFOrCNPJ,
   formatToPhoneBR,
   isCPFOrCNPJ,
-} from "jsr:@carlosxfelipe/brazilian-values@0.2.2";
+} from "jsr:@carlosxfelipe/brazilian-values@0.3.1";
 ```
 
 ## Exemplos

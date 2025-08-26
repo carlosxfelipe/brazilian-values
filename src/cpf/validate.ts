@@ -1,5 +1,14 @@
 import { onlyDigits } from "../core/normalize.ts";
 
+/**
+ * Valida um CPF (11 dígitos) calculando os dois dígitos verificadores.
+ *
+ * @param cpf CPF com ou sem máscara.
+ * @returns `true` quando válido.
+ * @example
+ * isCPF("123.456.789-09");
+ * isCPF("12345678909");
+ */
 export const isCPF = (cpf: string): boolean => {
   const v = onlyDigits(cpf);
   if (v.length !== 11 || /^(\d)\1+$/.test(v)) return false;

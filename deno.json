@@ -1,9 +1,22 @@
 {
   "name": "@carlosxfelipe/brazilian-values",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "license": "MIT",
   "description": "Validação e formatação de valores brasileiros (CPF, CNPJ, novo CNPJ alfa-numérico, CEP, telefone, BRL) para Deno/TS.",
   "repository": "https://github.com/carlosxfelipe/brazilian-values",
+  "keywords": [
+    "cpf",
+    "cnpj",
+    "alphacnpj",
+    "cep",
+    "telefone",
+    "brl",
+    "brasil",
+    "mask",
+    "format",
+    "validate",
+    "document"
+  ],
   "exports": {
     ".": "./mod.ts"
   },

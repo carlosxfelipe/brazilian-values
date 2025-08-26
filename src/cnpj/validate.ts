@@ -1,5 +1,15 @@
 import { onlyDigits } from "../core/normalize.ts";
 
+/**
+ * Valida um CNPJ (14 dígitos) pelo algoritmo de módulo 11.
+ * Aceita string, número ou array de dígitos.
+ *
+ * @param cnpj CNPJ com ou sem máscara, ou representação numérica/array.
+ * @returns `true` quando válido.
+ * @example
+ * isCNPJ("11.222.333/0001-81"); // true
+ * isCNPJ([1,1,2,2,2,3,3,3,0,0,0,1,8,1]); // true
+ */
 const calcDV = (digits: string, weights: number[]) => {
   const sum = digits.split("").reduce(
     (acc, n, i) => acc + Number(n) * weights[i],
